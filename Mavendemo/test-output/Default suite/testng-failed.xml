@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.DependsOnGroups">
+      <class name="com.testcase.Framehandling">
         <methods>
-          <include name="search"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.TestNG.DependsOnGroups -->
+      </class> <!-- com.testcase.Framehandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
