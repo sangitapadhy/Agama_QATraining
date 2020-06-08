@@ -1,23 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="60" started-at="2020-06-08T19:36:35Z" finished-at="2020-06-08T19:36:35Z">
+  <suite name="Default suite" duration-ms="53" started-at="2020-06-08T22:23:42Z" finished-at="2020-06-08T22:23:42Z">
     <groups>
+      <group name="functionaltesting">
+        <method signature="DependsOnGroups.logout()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="logout" class="com.TestNG.DependsOnGroups"/>
+      </group> <!-- functionaltesting -->
+      <group name="regressiontesting">
+        <method signature="DependsOnGroups.logout()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="logout" class="com.TestNG.DependsOnGroups"/>
+        <method signature="DependsOnGroups.search()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="search" class="com.TestNG.DependsOnGroups"/>
+      </group> <!-- regressiontesting -->
       <group name="sanitytesting">
-        <method signature="DependsOnGroups.login()[pri:0, instance:com.TestNG.DependsOnGroups@69ea3742]" name="login" class="com.TestNG.DependsOnGroups"/>
+        <method signature="DependsOnGroups.login()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="login" class="com.TestNG.DependsOnGroups"/>
       </group> <!-- sanitytesting -->
       <group name="smoketesting">
-        <method signature="DependsOnGroups.login()[pri:0, instance:com.TestNG.DependsOnGroups@69ea3742]" name="login" class="com.TestNG.DependsOnGroups"/>
+        <method signature="DependsOnGroups.login()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="login" class="com.TestNG.DependsOnGroups"/>
+        <method signature="DependsOnGroups.search()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="search" class="com.TestNG.DependsOnGroups"/>
       </group> <!-- smoketesting -->
     </groups>
-    <test name="Test" duration-ms="60" started-at="2020-06-08T19:36:35Z" finished-at="2020-06-08T19:36:35Z">
+    <test name="Default test" duration-ms="53" started-at="2020-06-08T22:23:42Z" finished-at="2020-06-08T22:23:42Z">
       <class name="com.TestNG.DependsOnGroups">
-        <test-method status="PASS" signature="login()[pri:0, instance:com.TestNG.DependsOnGroups@69ea3742]" name="login" duration-ms="19" started-at="2020-06-08T15:36:35Z" finished-at="2020-06-08T15:36:35Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="login" duration-ms="20" started-at="2020-06-08T18:23:42Z" finished-at="2020-06-08T18:23:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="logout" duration-ms="1" started-at="2020-06-08T18:23:42Z" finished-at="2020-06-08T18:23:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="search()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="search" duration-ms="3" started-at="2020-06-08T18:23:42Z" finished-at="2020-06-08T18:23:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
       </class> <!-- com.TestNG.DependsOnGroups -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

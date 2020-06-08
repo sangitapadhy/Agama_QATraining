@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.TestNG.DependsOnGroups">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- com.TestNG.DependsOnGroups -->
+      <class name="com.TestNG.DependsuponMethods">
+        <methods>
+          <include name="login"/>
+          <include name="search"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.TestNG.DependsuponMethods -->
+      <class name="com.TestNG.ParallelExecution">
+        <methods>
+          <include name="testcase3"/>
+          <include name="testcase2"/>
+          <include name="testcase1"/>
+        </methods>
+      </class> <!-- com.TestNG.ParallelExecution -->
+      <class name="com.TestNG.testngexample">
+        <methods>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- com.TestNG.testngexample -->
+      <class name="com.TestNG.prioritytestcase">
+        <methods>
+          <include name="testcase1"/>
+          <include name="testcase2"/>
+          <include name="testcase3"/>
+        </methods>
+      </class> <!-- com.TestNG.prioritytestcase -->
+      <class name="com.TestNG.CallwrapperTestNG">
+        <methods>
+          <include name="admin"/>
+          <include name="login"/>
+          <include name="insertapp"/>
+        </methods>
+      </class> <!-- com.TestNG.CallwrapperTestNG -->
+      <class name="com.TestNG.TestCase1">
+        <methods>
+          <include name="TestCast2"/>
+          <include name="TestCast4"/>
+          <include name="TestCast3"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.TestNG.TestCase1 -->
+      <class name="com.TestNG.ParallelExecution1">
+        <methods>
+          <include name="testcase6"/>
+          <include name="testcase5"/>
+          <include name="testcase4"/>
+        </methods>
+      </class> <!-- com.TestNG.ParallelExecution1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

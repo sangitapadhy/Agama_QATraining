@@ -13,8 +13,8 @@ public class DependsOnGroups {
 	@Test(groups= {"smoketesting","regressiontesting"})
 	  public void search() {
 	  System.out.println("Search");
-	 // Assert.assertEquals("xyz","xyz"); //this will pass
-	  Assert.assertEquals("xyz","abc"); //this will fail
+	 Assert.assertEquals("xyz","xyz"); //this will pass
+	  //Assert.assertEquals("xyz","abc"); //this will fail
 	 }
 	  @Test (groups= {"regressiontesting","functionaltesting"})
 	  public void logout() {
