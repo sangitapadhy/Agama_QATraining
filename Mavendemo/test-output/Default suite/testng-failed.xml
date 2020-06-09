@@ -3,11 +3,47 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.DependsOnGroups">
+      <class name="com.testcase.AlertHandling">
         <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.testcase.AlertHandling -->
+      <class name="com.TestNG.DependsuponMethods">
+        <methods>
+          <include name="login"/>
           <include name="search"/>
         </methods>
-      </class> <!-- com.TestNG.DependsOnGroups -->
+      </class> <!-- com.TestNG.DependsuponMethods -->
+      <class name="com.TestNG.CallwrapperTestNG">
+        <methods>
+          <include name="quit"/>
+          <include name="insertapp"/>
+        </methods>
+      </class> <!-- com.TestNG.CallwrapperTestNG -->
+      <class name="com.TestNG.testngexample">
+        <methods>
+          <include name="Openurl"/>
+          <include name="quit"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.TestNG.testngexample -->
+      <class name="com.TestNG.TestCase1">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.TestNG.TestCase1 -->
+      <class name="com.testcase.DatePicker">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.testcase.DatePicker -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

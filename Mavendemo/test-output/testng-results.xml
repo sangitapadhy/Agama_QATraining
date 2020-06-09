@@ -1,39 +1,462 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="3" total="27" passed="24">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="53" started-at="2020-06-08T22:23:42Z" finished-at="2020-06-08T22:23:42Z">
+  <suite name="Default suite" duration-ms="72192" started-at="2020-06-09T16:23:22Z" finished-at="2020-06-09T16:24:34Z">
     <groups>
       <group name="functionaltesting">
-        <method signature="DependsOnGroups.logout()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="logout" class="com.TestNG.DependsOnGroups"/>
+        <method signature="DependsOnGroups.logout()[pri:0, instance:com.TestNG.DependsOnGroups@56235b8e]" name="logout" class="com.TestNG.DependsOnGroups"/>
       </group> <!-- functionaltesting -->
       <group name="regressiontesting">
-        <method signature="DependsOnGroups.logout()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="logout" class="com.TestNG.DependsOnGroups"/>
-        <method signature="DependsOnGroups.search()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="search" class="com.TestNG.DependsOnGroups"/>
+        <method signature="DependsOnGroups.logout()[pri:0, instance:com.TestNG.DependsOnGroups@56235b8e]" name="logout" class="com.TestNG.DependsOnGroups"/>
+        <method signature="DependsOnGroups.search()[pri:0, instance:com.TestNG.DependsOnGroups@56235b8e]" name="search" class="com.TestNG.DependsOnGroups"/>
       </group> <!-- regressiontesting -->
       <group name="sanitytesting">
-        <method signature="DependsOnGroups.login()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="login" class="com.TestNG.DependsOnGroups"/>
+        <method signature="DependsOnGroups.login()[pri:0, instance:com.TestNG.DependsOnGroups@56235b8e]" name="login" class="com.TestNG.DependsOnGroups"/>
       </group> <!-- sanitytesting -->
       <group name="smoketesting">
-        <method signature="DependsOnGroups.login()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="login" class="com.TestNG.DependsOnGroups"/>
-        <method signature="DependsOnGroups.search()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="search" class="com.TestNG.DependsOnGroups"/>
+        <method signature="DependsOnGroups.login()[pri:0, instance:com.TestNG.DependsOnGroups@56235b8e]" name="login" class="com.TestNG.DependsOnGroups"/>
+        <method signature="DependsOnGroups.search()[pri:0, instance:com.TestNG.DependsOnGroups@56235b8e]" name="search" class="com.TestNG.DependsOnGroups"/>
       </group> <!-- smoketesting -->
     </groups>
-    <test name="Default test" duration-ms="53" started-at="2020-06-08T22:23:42Z" finished-at="2020-06-08T22:23:42Z">
-      <class name="com.TestNG.DependsOnGroups">
-        <test-method status="PASS" signature="login()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="login" duration-ms="20" started-at="2020-06-08T18:23:42Z" finished-at="2020-06-08T18:23:42Z">
+    <test name="Default test" duration-ms="72192" started-at="2020-06-09T16:23:22Z" finished-at="2020-06-09T16:24:34Z">
+      <class name="com.testcase.AlertHandling">
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.testcase.AlertHandling@3632be31]" name="login" duration-ms="13273" started-at="2020-06-09T12:23:50Z" finished-at="2020-06-09T12:24:03Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from chrome not reachable
+  (Session info: chrome=83.0.4103.61)
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-5EQ2V4T', ip: '192.168.86.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00AA9563+2725219]
+	Ordinal0 [0x009A8551+1672529]
+	Ordinal0 [0x00890202+524802]
+	Ordinal0 [0x008899B2+498098]
+	Ordinal0 [0x0088A09B+499867]
+	Ordinal0 [0x0088AFF5+503797]
+	Ordinal0 [0x00886994+485780]
+	Ordinal0 [0x00890FF0+528368]
+	Ordinal0 [0x0083D6C9+186057]
+	Ordinal0 [0x0083CA3D+182845]
+	Ordinal0 [0x0083A94B+174411]
+	Ordinal0 [0x00822528+75048]
+	Ordinal0 [0x008235A0+79264]
+	Ordinal0 [0x00823539+79161]
+	Ordinal0 [0x009BD607+1758727]
+	GetHandleVerifier [0x00BC6546+1050150]
+	GetHandleVerifier [0x00BC6291+1049457]
+	GetHandleVerifier [0x00BD10D7+1094071]
+	GetHandleVerifier [0x00BC6B46+1051686]
+	Ordinal0 [0x009B5B06+1727238]
+	Ordinal0 [0x009BEB7B+1764219]
+	Ordinal0 [0x009BECE3+1764579]
+	Ordinal0 [0x009D4C05+1854469]
+	BaseThreadInitThunk [0x760C6359+25]
+	RtlGetAppContainerNamedObjectPath [0x775C7C24+228]
+	RtlGetAppContainerNamedObjectPath [0x775C7BF4+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=83.0.4103.61)
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-5EQ2V4T', ip: '192.168.86.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00AA9563+2725219]
+	Ordinal0 [0x009A8551+1672529]
+	Ordinal0 [0x00890202+524802]
+	Ordinal0 [0x008899B2+498098]
+	Ordinal0 [0x0088A09B+499867]
+	Ordinal0 [0x0088AFF5+503797]
+	Ordinal0 [0x00886994+485780]
+	Ordinal0 [0x00890FF0+528368]
+	Ordinal0 [0x0083D6C9+186057]
+	Ordinal0 [0x0083CA3D+182845]
+	Ordinal0 [0x0083A94B+174411]
+	Ordinal0 [0x00822528+75048]
+	Ordinal0 [0x008235A0+79264]
+	Ordinal0 [0x00823539+79161]
+	Ordinal0 [0x009BD607+1758727]
+	GetHandleVerifier [0x00BC6546+1050150]
+	GetHandleVerifier [0x00BC6291+1049457]
+	GetHandleVerifier [0x00BD10D7+1094071]
+	GetHandleVerifier [0x00BC6B46+1051686]
+	Ordinal0 [0x009B5B06+1727238]
+	Ordinal0 [0x009BEB7B+1764219]
+	Ordinal0 [0x009BECE3+1764579]
+	Ordinal0 [0x009D4C05+1854469]
+	BaseThreadInitThunk [0x760C6359+25]
+	RtlGetAppContainerNamedObjectPath [0x775C7C24+228]
+	RtlGetAppContainerNamedObjectPath [0x775C7BF4+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.testcase.AlertHandling.login(AlertHandling.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="logout" duration-ms="1" started-at="2020-06-08T18:23:42Z" finished-at="2020-06-08T18:23:42Z">
+      </class> <!-- com.testcase.AlertHandling -->
+      <class name="com.testcase.DatePicker">
+        <test-method status="FAIL" signature="login()[pri:0, instance:com.testcase.DatePicker@2ac273d3]" name="login" duration-ms="4615" started-at="2020-06-09T12:24:29Z" finished-at="2020-06-09T12:24:34Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=83.0.4103.61)
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-5EQ2V4T', ip: '192.168.86.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\rwalt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51549}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dd36c25c300b29bfc89310f4b0cd949a
+*** Element info: {Using=xpath, value=//*[@id="search"]/div/div[3]/div/label}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=83.0.4103.61)
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'DESKTOP-5EQ2V4T', ip: '192.168.86.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\rwalt\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51549}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dd36c25c300b29bfc89310f4b0cd949a
+*** Element info: {Using=xpath, value=//*[@id="search"]/div/div[3]/div/label}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.testcase.DatePicker.login(DatePicker.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.testcase.DatePicker -->
+      <class name="com.TestNG.testngexample">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.TestNG.testngexample@527740a2]" name="Setup" is-config="true" duration-ms="4458" started-at="2020-06-09T12:23:44Z" finished-at="2020-06-09T12:23:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="Openurl()[pri:0, instance:com.TestNG.testngexample@527740a2]" name="Openurl" is-config="true" duration-ms="0" started-at="2020-06-09T12:23:48Z" finished-at="2020-06-09T12:23:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Openurl -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.TestNG.testngexample@527740a2]" name="Login" duration-ms="1685" started-at="2020-06-09T12:23:48Z" finished-at="2020-06-09T12:23:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.TestNG.testngexample@527740a2]" name="quit" is-config="true" duration-ms="0" started-at="2020-06-09T12:23:50Z" finished-at="2020-06-09T12:23:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.TestNG.testngexample -->
+      <class name="com.TestNG.CallwrapperTestNG">
+        <test-method status="PASS" signature="insertapp()[pri:0, instance:com.TestNG.CallwrapperTestNG@4fe3c938]" name="insertapp" is-config="true" duration-ms="8094" started-at="2020-06-09T12:23:22Z" finished-at="2020-06-09T12:23:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertapp -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.TestNG.TestCase1@5ec0a365]" name="beforeTest" is-config="true" duration-ms="1" started-at="2020-06-09T12:23:30Z" finished-at="2020-06-09T12:23:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login()[pri:1, instance:com.TestNG.CallwrapperTestNG@4fe3c938]" name="login" duration-ms="2455" started-at="2020-06-09T12:24:20Z" finished-at="2020-06-09T12:24:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="admin()[pri:2, instance:com.TestNG.CallwrapperTestNG@4fe3c938]" name="admin" duration-ms="6491" started-at="2020-06-09T12:24:23Z" finished-at="2020-06-09T12:24:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- admin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.TestNG.CallwrapperTestNG@4fe3c938]" name="quit" is-config="true" duration-ms="406" started-at="2020-06-09T12:24:34Z" finished-at="2020-06-09T12:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.TestNG.TestCase1@5ec0a365]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-06-09T12:24:34Z" finished-at="2020-06-09T12:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.TestNG.CallwrapperTestNG -->
+      <class name="com.TestNG.DependsOnGroups">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.TestNG.DependsOnGroups@56235b8e]" name="login" duration-ms="5" started-at="2020-06-09T12:23:44Z" finished-at="2020-06-09T12:23:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.TestNG.DependsOnGroups@56235b8e]" name="logout" duration-ms="1" started-at="2020-06-09T12:23:44Z" finished-at="2020-06-09T12:23:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="search()[pri:0, instance:com.TestNG.DependsOnGroups@1ed4004b]" name="search" duration-ms="3" started-at="2020-06-08T18:23:42Z" finished-at="2020-06-08T18:23:42Z">
+        <test-method status="PASS" signature="search()[pri:0, instance:com.TestNG.DependsOnGroups@56235b8e]" name="search" duration-ms="5" started-at="2020-06-09T12:23:44Z" finished-at="2020-06-09T12:23:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
       </class> <!-- com.TestNG.DependsOnGroups -->
+      <class name="com.TestNG.ParallelExecution1">
+        <test-method status="PASS" signature="testcase4()[pri:0, instance:com.TestNG.ParallelExecution1@6d7b4f4c]" name="testcase4" duration-ms="2" started-at="2020-06-09T12:23:38Z" finished-at="2020-06-09T12:23:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase4 -->
+        <test-method status="PASS" signature="testcase5()[pri:0, instance:com.TestNG.ParallelExecution1@6d7b4f4c]" name="testcase5" duration-ms="2" started-at="2020-06-09T12:23:38Z" finished-at="2020-06-09T12:23:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase5 -->
+        <test-method status="PASS" signature="testcase6()[pri:0, instance:com.TestNG.ParallelExecution1@6d7b4f4c]" name="testcase6" duration-ms="1" started-at="2020-06-09T12:23:38Z" finished-at="2020-06-09T12:23:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase6 -->
+      </class> <!-- com.TestNG.ParallelExecution1 -->
+      <class name="com.testcase.Framehandling">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.testcase.Framehandling@13a5fe33]" name="login" duration-ms="6133" started-at="2020-06-09T12:23:38Z" finished-at="2020-06-09T12:23:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.testcase.Framehandling -->
+      <class name="com.TestNG.prioritytestcase">
+        <test-method status="PASS" signature="testcase3()[pri:1, instance:com.TestNG.prioritytestcase@5383967b]" name="testcase3" duration-ms="2" started-at="2020-06-09T12:24:20Z" finished-at="2020-06-09T12:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase3 -->
+        <test-method status="PASS" signature="testcase1()[pri:2, instance:com.TestNG.prioritytestcase@5383967b]" name="testcase1" duration-ms="1" started-at="2020-06-09T12:24:23Z" description="Firsttestcase" finished-at="2020-06-09T12:24:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase1 -->
+        <test-method status="PASS" signature="testcase2()[pri:3, instance:com.TestNG.prioritytestcase@5383967b]" name="testcase2" duration-ms="2" started-at="2020-06-09T12:24:29Z" finished-at="2020-06-09T12:24:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+      </class> <!-- com.TestNG.prioritytestcase -->
+      <class name="com.TestNG.TestCase1">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.TestNG.TestCase1@5ec0a365]" name="beforeSuite" is-config="true" duration-ms="16" started-at="2020-06-09T12:23:22Z" finished-at="2020-06-09T12:23:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.TestNG.TestCase1@5ec0a365]" name="beforeClass" is-config="true" duration-ms="1" started-at="2020-06-09T12:24:20Z" finished-at="2020-06-09T12:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TestNG.TestCase1@5ec0a365]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-06-09T12:24:20Z" finished-at="2020-06-09T12:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCast2()[pri:0, instance:com.TestNG.TestCase1@5ec0a365]" name="TestCast2" duration-ms="2" started-at="2020-06-09T12:24:20Z" finished-at="2020-06-09T12:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCast2 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TestNG.TestCase1@5ec0a365]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-06-09T12:24:20Z" finished-at="2020-06-09T12:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TestCast3()[pri:0, instance:com.TestNG.TestCase1@5ec0a365]" name="TestCast3" duration-ms="1" started-at="2020-06-09T12:24:20Z" finished-at="2020-06-09T12:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCast3 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TestNG.TestCase1@5ec0a365]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-06-09T12:24:20Z" finished-at="2020-06-09T12:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TestNG.TestCase1@5ec0a365]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-06-09T12:24:20Z" finished-at="2020-06-09T12:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TestNG.TestCase1@5ec0a365]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-06-09T12:24:20Z" finished-at="2020-06-09T12:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TestCast4()[pri:0, instance:com.TestNG.TestCase1@5ec0a365]" name="TestCast4" duration-ms="1" started-at="2020-06-09T12:24:20Z" finished-at="2020-06-09T12:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCast4 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.TestNG.TestCase1@5ec0a365]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-06-09T12:24:20Z" finished-at="2020-06-09T12:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TestNG.TestCase1@5ec0a365]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-06-09T12:24:20Z" finished-at="2020-06-09T12:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.TestNG.TestCase1@5ec0a365]" name="afterSuite" is-config="true" duration-ms="0" started-at="2020-06-09T12:24:34Z" finished-at="2020-06-09T12:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.TestNG.TestCase1 -->
+      <class name="com.TestNG.ParallelExecution">
+        <test-method status="PASS" signature="testcase1()[pri:0, instance:com.TestNG.ParallelExecution@5abca1e0]" name="testcase1" duration-ms="1" started-at="2020-06-09T12:24:03Z" finished-at="2020-06-09T12:24:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase1 -->
+        <test-method status="PASS" signature="testcase2()[pri:0, instance:com.TestNG.ParallelExecution@5abca1e0]" name="testcase2" duration-ms="1" started-at="2020-06-09T12:24:03Z" finished-at="2020-06-09T12:24:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+        <test-method status="PASS" signature="testcase3()[pri:0, instance:com.TestNG.ParallelExecution@5abca1e0]" name="testcase3" duration-ms="2" started-at="2020-06-09T12:24:03Z" finished-at="2020-06-09T12:24:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase3 -->
+      </class> <!-- com.TestNG.ParallelExecution -->
+      <class name="com.testcase.ScrollDown">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.testcase.ScrollDown@4e9ba398]" name="login" duration-ms="10465" started-at="2020-06-09T12:24:10Z" finished-at="2020-06-09T12:24:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.testcase.ScrollDown -->
+      <class name="com.TestNG.DependsuponMethods">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.TestNG.DependsuponMethods@71423665]" name="login" duration-ms="2" started-at="2020-06-09T12:24:34Z" finished-at="2020-06-09T12:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="FAIL" signature="search()[pri:0, instance:com.TestNG.DependsuponMethods@71423665]" name="search" duration-ms="5" started-at="2020-06-09T12:24:34Z" depends-on-methods="com.TestNG.DependsuponMethods.login" finished-at="2020-06-09T12:24:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [abc] but found [xyz]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [abc] but found [xyz]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.TestNG.DependsuponMethods.search(DependsuponMethods.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.TestNG.DependsuponMethods@71423665]" name="logout" duration-ms="2" started-at="2020-06-09T12:24:34Z" depends-on-methods="com.TestNG.DependsuponMethods.search" finished-at="2020-06-09T12:24:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- com.TestNG.DependsuponMethods -->
+      <class name="com.testcase.Keyboardhandling">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.testcase.Keyboardhandling@2286778]" name="login" duration-ms="6518" started-at="2020-06-09T12:24:03Z" finished-at="2020-06-09T12:24:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.testcase.Keyboardhandling -->
+      <class name="com.testcase.mousehandling">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.testcase.mousehandling@6fc6f14e]" name="login" duration-ms="7460" started-at="2020-06-09T12:23:30Z" finished-at="2020-06-09T12:23:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.testcase.mousehandling -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
