@@ -3,61 +3,36 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.TestNG.DependsOnGroups">
+      <class name="com.testcase.ScrollDown">
         <methods>
           <include name="login"/>
-          <include name="logout"/>
-          <include name="search"/>
         </methods>
-      </class> <!-- com.TestNG.DependsOnGroups -->
-      <class name="com.TestNG.DependsuponMethods">
+      </class> <!-- com.testcase.ScrollDown -->
+      <class name="com.testcase.AlertHandling">
         <methods>
           <include name="login"/>
-          <include name="search"/>
-          <include name="logout"/>
         </methods>
-      </class> <!-- com.TestNG.DependsuponMethods -->
-      <class name="com.TestNG.ParallelExecution">
+      </class> <!-- com.testcase.AlertHandling -->
+      <class name="com.testcase.Keyboardhandling">
         <methods>
-          <include name="testcase3"/>
-          <include name="testcase2"/>
-          <include name="testcase1"/>
-        </methods>
-      </class> <!-- com.TestNG.ParallelExecution -->
-      <class name="com.TestNG.testngexample">
-        <methods>
-          <include name="Login"/>
-        </methods>
-      </class> <!-- com.TestNG.testngexample -->
-      <class name="com.TestNG.prioritytestcase">
-        <methods>
-          <include name="testcase1"/>
-          <include name="testcase2"/>
-          <include name="testcase3"/>
-        </methods>
-      </class> <!-- com.TestNG.prioritytestcase -->
-      <class name="com.TestNG.CallwrapperTestNG">
-        <methods>
-          <include name="admin"/>
           <include name="login"/>
-          <include name="insertapp"/>
         </methods>
-      </class> <!-- com.TestNG.CallwrapperTestNG -->
-      <class name="com.TestNG.TestCase1">
+      </class> <!-- com.testcase.Keyboardhandling -->
+      <class name="com.testcase.mousehandling">
         <methods>
-          <include name="TestCast2"/>
-          <include name="TestCast4"/>
-          <include name="TestCast3"/>
-          <include name="beforeSuite"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.TestNG.TestCase1 -->
-      <class name="com.TestNG.ParallelExecution1">
+      </class> <!-- com.testcase.mousehandling -->
+      <class name="com.testcase.DatePicker">
         <methods>
-          <include name="testcase6"/>
-          <include name="testcase5"/>
-          <include name="testcase4"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.TestNG.ParallelExecution1 -->
+      </class> <!-- com.testcase.DatePicker -->
+      <class name="com.testcase.Framehandling">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.testcase.Framehandling -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

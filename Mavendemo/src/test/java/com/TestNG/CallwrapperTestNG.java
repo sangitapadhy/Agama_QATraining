@@ -26,13 +26,13 @@ public class CallwrapperTestNG {
 	
 	@Test(priority=2)
 		public void admin() throws InterruptedException{
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		ow.clickbyxpath("//*[@id=\'menu_admin_viewAdminModule\']");
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		ow.clickbyxpath("//*[@id=\'menu_admin_UserManagement\']");
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		ow.enterbyid("searchSystemUser_userName", "Sangita");
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		ow.clickbyxpath("//input[@id='searchBtn']");
 		ow.selectdropdown("searchSystemUser_userType","Admin");
 		ow.enterbyid("searchSystemUser_employeeName_empName", "Sangita Padhy");

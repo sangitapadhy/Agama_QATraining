@@ -32,9 +32,11 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>6.8.7</version>
-    <scope>provided</scope>
+     <scope>provided</scope>
     <optional>true</optional>
 </dependency>  
+
+
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -55,6 +57,27 @@
       <artifactId>selenium-java</artifactId>
       <version>2.35.0</version>
 </dependency> 
+
+
+<dependency>
+	<groupId>org.apache-extras.beanshell</groupId>
+	<artifactId>bsh</artifactId>
+	<version>2.0b6</version>
+</dependency>
+<!-- copied these 2 dependiencies on Jun09 220-->
+
+<dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>1.7.21</version> <!-- or use LATEST -->
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-simple</artifactId>
+        <version>1.7.21</version> <!-- or use LATEST -->
+    </dependency>
+
+
     </dependencies>
     
     
